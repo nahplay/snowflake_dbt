@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  dbt_snowflake:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: dbt_snowflake
+    environment:
+      - SNOWFLAKE_ACCOUNT=${SNOWFLAKE_ACCOUNT}
+      - SNOWFLAKE_USERNAME=${SNOWFLAKE_USERNAME}
+      - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    entrypoint: bash
+    tty: true

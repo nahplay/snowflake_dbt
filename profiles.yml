@@ -1,0 +1,12 @@
+snowflake_default_project:
+ target: DEV
+ outputs:
+  DEV:
+    account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+    database: DEV_DATALAKE
+    schema: DEV
+    user: "{{ env_var('SNOWFLAKE_USERNAME') }}"
+    password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+    threads: 4
+    type: snowflake
+    warehouse: dbt_warehouse
