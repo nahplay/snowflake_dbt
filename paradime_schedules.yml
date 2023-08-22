@@ -6,3 +6,4 @@ schedules:
       - dbt seed
       - dbt run
       - dbt test
+      - dbt docs generate
