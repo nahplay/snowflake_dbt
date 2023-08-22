@@ -1,0 +1,10 @@
+version: 2
+models:
+- name: bikes_downstream_to_staging
+  description: This is a downstream model to bikes_staging.
+  columns:
+    - name: downstream_model
+      data_type: string 
+      description: Downstream indicator
+      tests:
+        - not_null

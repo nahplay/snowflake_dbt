@@ -1,4 +1,4 @@
-snowflake_default_project:
+elementary:
  target: DEV
  outputs:
   DEV:

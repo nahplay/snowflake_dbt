@@ -6,4 +6,3 @@ sources:
     schema: raw_bikes
     tables:
       - name: bikes
-      - name: my_ext_table
