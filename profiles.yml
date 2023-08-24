@@ -3,10 +3,10 @@ elementary:
  outputs:
   DEV:
     account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
-    database: DEV_DATALAKE
-    schema: DEV
+    database: DBT_PROJECT
+    schema: FARGATE_TEST
     user: "{{ env_var('SNOWFLAKE_USERNAME') }}"
     password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
     threads: 4
     type: snowflake
-    warehouse: dbt_warehouse
+    warehouse: DBT_PROD_WH
