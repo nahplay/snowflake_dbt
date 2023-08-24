@@ -1,5 +1,5 @@
 schedules:
-  - name: daily_run #the name of your schedule
+  {# - name: daily_run #the name of your schedule
     schedule: "*/30 * * * *" #the schedule cron configuration or use "OFF" if you want to disable the schedule
     environment: production #the environment used to run the schedule -> this is always production
     commands: #the set of dbt commands you want to run in the schedule
@@ -12,4 +12,4 @@ schedules:
         - failed
     slack_notify: #the channel/user that will be notified
         - "#dbt-notifications"
-        - "@Maksym"
+        - "@Maksym" #}
