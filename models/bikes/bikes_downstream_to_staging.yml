@@ -8,3 +8,8 @@ models:
       description: Downstream indicator
       tests:
         - not_null
+    - name: registered_count_ratio
+      data_type: not_null
+      description: Some ration to test
+      tests:
+        - not_null
