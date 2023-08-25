@@ -1,0 +1,1 @@
+select 'hi' as column_name
